@@ -1,0 +1,136 @@
+:root {
+    --background-color: #E4E9ED;
+    --board-background-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 24px;
+    background-color: var(--background-color);
+    font-family: 'General Sans', sans-serif;
+}
+
+header {
+    margin: 24px 0 12px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.stage {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 200px;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    /* gap: 16px; */
+    border-radius: 12px;
+    padding: 12px;
+    background-color: var(--board-background-color);
+}
+
+.board-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.board .urgency {
+    font-size: 0.6em;
+    border-radius: 5px;
+    padding: 3px 3px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.board .date {
+    font-size: 0.6em;
+    /* border-radius: 5px; */
+    padding: 0 3px;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.high {
+    background-color: #E40B7B;
+}
+
+.medium {
+    background-color: #30B4F0;
+}
+
+.low {
+    background-color: #53B442;
+}
+
+.plus-icon {
+    width: 0.6em;
+}
+
+.board .assignees {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    margin-left: 10px;
+}
+
+.board .assignees #owner {
+    width: 1.5em;
+    margin-left: -10px;
+}
+
+.board .assignees .add-owner {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: -10px;
+    border: 1px dashed gray;
+}
+
+#plus-icon {
+    width: 0.6em;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.board h3 {
+    font-size: 0.85em;
+    margin-bottom: 10px;
+    color: #050709;
+}
+
+.board .board-image #task-image{
+    height: 70px;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.board p {
+    font-size: 0.75em;
+    color:#666666;
+}

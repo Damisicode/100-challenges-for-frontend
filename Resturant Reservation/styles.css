@@ -1,0 +1,133 @@
+:root {
+    --background-color: #E4CDBC;
+    --content-background-color: white;
+    --review-star-color: #FA8825;
+    --alt-review-star-color: #F9C593;
+    --cta-background-color: black;
+    --cta-text-color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: var(--content-background-color);
+    border-radius: 10px;
+    gap: 5px;
+    font-size: 0.8em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+img {
+    display: none;
+}
+
+img:first-of-type {
+    display: block;
+}
+
+.heading {
+    margin: 16px 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading .desc {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.heading h3 {
+    font-size: 1.5em;
+}
+
+.reviews {
+    display: flex;
+    margin: 0 10px;
+    gap: 5px;
+}
+
+.reviews .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.reviews .icons i {
+    font-size: 0.8em;
+    color: var(--review-star-color);
+}
+
+.reviews .icons i:last-of-type {
+    color: var(--alt-review-star-color);
+}
+
+.description {
+    margin: 20px 10px;
+}
+
+.cta {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cta-background-color);
+    border-radius: 0 0 10px 10px;
+}
+
+.cta a {
+    text-decoration: none;
+    color: var(--cta-text-color);
+}
+
+.like img {
+    width: 1.5em;
+}
+
+.description p {
+    font-size: 0.95em;
+    font-weight: 400;
+}
+
+.top {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev {
+    /* margin-left: -40px; */
+}
+
+.next {
+    /* margin-left: -50px; */
+}

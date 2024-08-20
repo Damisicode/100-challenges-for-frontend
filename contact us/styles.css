@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: url('map-background.jpg');
+}
+
+.main {
+    position: relative;
+    padding: 50px 80px;
+    background: linear-gradient(to bottom, #472ADD 0%, #472ADD 30%, transparent);
+    background-size: cover;
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+}
+
+.desc {
+    text-align: left;
+    color: white;
+    padding-right: 10px;
+    width: 45vw;
+}
+
+.desc h1 {
+    font-size: xx-large;
+    padding-bottom: 15px;
+    margin-left: 10px;
+}
+
+.desc p {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    font-size: 0.8em;
+}
+
+.location .address {
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: #FE007A;
+    color: white;
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+.location .address .street {
+    filter: blur(0.5px);
+}
+
+.zip {
+    filter: blur(1px);
+}
+
+.location .angle {
+    /* position: absolute; */
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 20px solid #FE007A;
+    margin: auto;
+}
+
+.location .spot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #FE007A;
+    margin: auto;
+    margin-top: 12px;
+    box-shadow: 
+        0 0 2px 6px rgba(254, 0, 122, 0.6), /* First shadow */
+        0 0 3px 12px rgba(254, 0, 122, 0.3); /* Second shadow */
+}
+
+.form {
+    color: black;
+    text-align: left;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: white;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    font-size: 0.5rem;
+}
+
+.form h2 {
+    padding-bottom: 20px;
+    color:rgba(0, 0, 0, 0.6);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.form-fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type=text], input[type=email], input[type=phone] {
+    height: 2em;
+    border-radius: 10px;
+    border: 0.5px solid rgba(128, 128, 128, 0.3);
+    padding: 15px 5px;
+    color: rgba(128, 128, 128, 0.6);
+    background-color: white;
+}
+
+input[type=text]::placeholder, input[type=email]::placeholder, input[type=phone]::placeholder {
+    color: rgba(128, 128, 128, 0.8);
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.contact-desc, .contact-method {
+    font-size: 1.5em;
+    opacity: 0.8;
+}
+
+.contact-desc {
+    margin-top: 10px;
+}
+
+.form-fields label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.option-label {
+    font-size: 1.5em;
+    padding-right: 20px;
+    padding-left: 5px;
+    color:rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+}
+
+.contact-method input {
+    color: black;
+    padding-bottom: 10px;
+}
+
+input[type=radio] {
+    background-color: #472ADD;
+    padding-left: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    display: block;
+    color: black;
+    opacity: 0.6;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    resize: none;
+    width: 100%;
+}
+
+input[type=submit] {
+    border-radius: 20px;
+    color: white;
+    background-color: #FE007A;
+    padding: 10px;
+    border: none;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    align-self: flex-end;
+    margin-top: auto;
+}

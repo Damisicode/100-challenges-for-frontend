@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main section {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #858992;
+}
+
+main h4 {
+    color: #A2A3A2;
+    font-size: 0.8em;
+}
+
+main h2 {
+    font-size: 2em;
+    margin-bottom: 24px;
+    color: black;
+}
+
+input {
+    border-radius: 5px;
+    background-color: #E8ECF7;
+    height: 40px;
+    padding-top: 14px;
+    padding-left: 12px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fullname {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.input-box .name-left {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.password {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .input-box {
+    display: flex;
+    flex-grow: 1;
+}
+
+.input-heading {
+    font-size: 0.6em;
+    margin-bottom: -14px;
+    padding-left: 12px;
+    padding-top: 5px;
+    z-index: 1;
+    color: #858992;
+}
+
+.input-box i {
+    margin-left: -30px;
+    z-index: 2;
+    color: #858992;
+}
+
+input::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+a {
+    color: #3F6BFE;
+}
+
+button {
+    height: 40px;
+    color: white;
+    background-color: #3F6BFE;
+    border-radius: 25px;
+    border: none;
+    margin: 12px 0;
+}
+
+p {
+    margin: 10px 0;
+}

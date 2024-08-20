@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="desc">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us! Whether you have questions, feedback, or just want to say hello, we're here for you.</p>
+            <div class="location">
+                <div class="address">
+                    <div class="street">Windler, Lockman and McClure</div>
+                    <div class="zip">3529 N Cole Rd, Boise, Illinois</div>
+                </div>
+                <div class="angle"></div>
+                <div class="spot"></div>
+            </div>
+        </div>
+        <div class="form">
+            <h2>Send us a Message</h2>
+            <form>
+                <div class="form-fields">
+                    <input type="text" placeholder="Name" id="full-name"/>
+                    <input type="email" placeholder="Email" id="email-address"/>
+                    <input type="phone" placeholder="Phone" id="phone"/>
+                    <h4 class="contact-desc">Preferred contact method of communication</h4>
+                    <label>
+                        <input type="radio" value="Email" name="Email" id="email-contact-method"/> <span class="option-label">Email</span>
+                        <input type="radio" value="Phone" name="Phone" checked id="phone-contact-method"/> <span class="option-label">Phone</span>
+                    </label>
+                    <textarea rows="5" cols="30" placeholder="Message" id="message"></textarea>
+                </div>
+                <input type="submit" value="Submit" class="btn" id="submit"/>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

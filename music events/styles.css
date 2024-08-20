@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    gap: 10px;
+}
+
+main h2 {
+    font-size: 2em;
+}
+
+main p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.events {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.event {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    gap: 12px;
+    padding: 16px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6DBD4;
+    height: 100%;
+    width: 28%;
+    border-radius: 10px;
+    padding: auto 10px;
+}
+
+.date h2 {
+    font-size: 1.5em;
+}
+
+.date span {
+    font-size: 0.8em;
+}
+
+.events .event .event-desc {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.events .event .event-desc h3 {
+    w
+}
+
+.event-desc p {
+    font-size: 0.8em;
+}
+
+.buy-ticket {
+    width: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+}
+
+.buy-ticket button {
+    font-size: 0.8em;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.event:first-of-type .buy-ticket button {
+    background-color: white;
+    color: black;
+}
+
+.event:first-of-type .buy-ticket button i {
+    display: none;
+}
+
+i {
+    color: white;
+}

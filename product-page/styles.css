@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 10vh 5vh 0;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    position: relative;
+    font-family: "Merriweather", serif;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.variants {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 8%;
+    align-self: flex-start;
+}
+
+.variants > img {
+    width: 100%;
+}
+
+.variant {
+    border: 2px solid #2A77DF;
+    width: 60%;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.product-image {
+    width: 55%;
+    height: 100vh;
+}
+
+.product-image > img {
+    width: 100%;
+    background-color: #EEF0EE;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.desc {
+    width: 50%;
+    margin-left: 20px;
+    height:max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.desc h3 {
+    font-size: small;
+    color: #3577D6;
+}
+
+.desc h1 {
+    font-size: 1.8rem;
+    padding: 10px 0;
+}
+
+.desc p {
+    font-size: small;
+    color: gray;
+}
+
+.price {
+    margin: 15px 0;
+}
+
+.on-sale {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.percent-off {
+    border-radius: 3px;
+    background-color: #ABCCF9;
+    color: #3D82E8;
+    margin-left: 10px;
+    padding: 3px;
+    font-size: small;
+}
+
+.product-price {
+    text-decoration: line-through;
+    color: gray
+}
+
+.product-size .header {
+    font-size: small;
+    color: black;
+    font-weight: bold;
+}
+
+.sizes {
+    display: flex;
+    flex-direction: row;
+    max-width: 60%;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.size {
+    border-radius: 2px;
+    padding: 5px;
+    font-size: small;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.selected {
+    background-color: black;
+    color: white;
+}
+
+.button {
+    width: 100%;
+    background-color: #1A76FD;
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+    font-size: small;
+}

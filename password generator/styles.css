@@ -1,0 +1,130 @@
+:root {
+    --accent-color: #D060FC;
+    --first-text-color: #625B6B;
+    --second-text-color: #F0E6FF;
+
+    --box-background-color: #26173B;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F6E8FE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 320px;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    padding: 24px 14px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-size: 1.2em;
+}
+
+.password-field .password {
+    background-color: var(--box-background-color);
+    border-radius: 12px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 12px;
+}
+
+.password-field .password h3 {
+    font-size: 1em;
+    font-weight: 400;
+    justify-self: center;
+    color: var(--second-text-color);
+}
+
+.password-field .password .icons {
+    color: var(--accent-color);
+}
+
+h4 {
+    font-size: 0.65em;
+    color: var(--first-text-color);
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 0.65em;
+}
+
+span, p {
+    color: var(--second-text-color);
+}
+
+.char-len div:last-of-type {
+    height: 35px;
+    background-color: var(--box-background-color);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.settings .options {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.settings .options .option {
+    background-color: var(--box-background-color);
+    height: 35px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+button {
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.char-len span {
+    font-size: 0.65em;
+    color: var(--second-text-color);
+}
+
+.char-len input {
+    width: 80%;
+    height: 5px;
+    color: var(--accent-color);
+    cursor: pointer;
+    background: var(--accent-color);
+}
+
+.char-len input[type=range]::-webkit-scrollbar-track-piece {
+    background: var(--accent-color);
+}
