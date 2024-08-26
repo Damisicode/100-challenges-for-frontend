@@ -21,21 +21,21 @@
         <section class="password-field">
             <h4>GENERATED PASSWORD</h4>
             <div class="password">
-                <h3>sZBseL181NEj</h3>
+                <h3 class="password-text">sZBseL181NEj</h3>
                 <div class="icons">
-                    <i class="fa-regular fa-copy"></i>
-                    <i class="fa-solid fa-rotate"></i>
+                    <i class="fa fa-regular fa-copy" id="copy-password"></i>
+                    <i class="fab fa-solid fa-rotate" id="new-password"></i>
                 </div>
             </div>
         </section>
         <section class="char-len">
-            <div>
+            <div class="char-heading">
                 <h4>CHARACTER LENGTH</h4>
                 <span class="counter"></span>
             </div>
             <div>
                 <span class="min">8</span>
-                <input type="range" min="8" max="32" />
+                <input type="range" min="8" max="32" id="char-length"/>
                 <span class="min">32</span>
             </div>
         </section>
@@ -45,28 +45,28 @@
                 <div class="option">
                     <p>Include uppercase letters</p>
                     <label class="switch">
-                        <input type="checkbox">
+                        <input type="checkbox" id="uppercase">
                         <span class="slider round"></span>
                     </label>
                 </div>
                 <div class="option">
                     <p>Include lowercase letters</p>
                     <label class="switch">
-                        <input type="checkbox">
+                        <input type="checkbox" id="lowercase">
                         <span class="slider round"></span>
                     </label>
                 </div>
                 <div class="option">
                     <p>Include numbers</p>
                     <label class="switch">
-                        <input type="checkbox">
+                        <input type="checkbox" id="numbers">
                         <span class="slider round"></span>
                     </label>
                 </div>
                 <div class="option">
                     <p>Include symbols</p>
                     <label class="switch">
-                        <input type="checkbox">
+                        <input type="checkbox" id="symbols">
                         <span class="slider round"></span>
                     </label>
                 </div>

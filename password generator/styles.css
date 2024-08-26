@@ -128,3 +128,14 @@ button {
 .char-len input[type=range]::-webkit-scrollbar-track-piece {
     background: var(--accent-color);
 }
+
+.char-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.char-heading span {
+    margin-right: 16px;
+    font-size: 0.8em;
+}

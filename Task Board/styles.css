@@ -92,6 +92,7 @@ main {
 .board .assignees #owner {
     width: 1.5em;
     margin-left: -10px;
+    z-index: 2;
 }
 
 .board .assignees .add-owner {
@@ -104,10 +105,12 @@ main {
     border-radius: 50%;
     margin-left: -10px;
     border: 1px dashed gray;
+    z-index: 1;
 }
 
 #plus-icon {
     width: 0.6em;
+    z-index: 1;
 }
 
 .heading {
