@@ -127,20 +127,59 @@ const boards = [
     },
 ]
 
-const getBoard = function (boardID) {
-    
+// Handle all board actions including get, update, delete
+const boardAction = function (boardID, action, board) {
+    boards.forEach((board) => {
+        if (board.id === boardID) {
+            if (action === 'get') return board;
+            else if (action === 'update') {
+                // for 
+            } else if (action === 'delete') boards.pop(board);
+        }
+    })
+};
+
+// Handle addition of board
+const addBoard = function (newBoard) {
+    boards.push(newBoard);
 }
 
-const addTask = function (boardID, stageID) {
-    for (const board of boards) {
-        if (board.id === boardID) {
-            for (const stage of board.stages) {
-                if (stage.id === stageID) {
+// Handle display of 
 
-                }
-            }
+// Handle all Stage actions including get, update, and delete
+const stageAction = function (stageID, action, board, updatedStage) {
+    board.stages.forEach((stage) => {
+        if (stage.id === stageID) {
+            if (action === 'get') return stage;
+            else if (action === 'update') {
+                // for 
+            } else if (action === 'delete') boards.pop(stage);
         }
-    }
+    })
+};
+
+// Handle addition of stage
+const addStage = function (boardID, newStage) {
+    const board = stageAction(boardID, 'get');
+    board.push(newStage);
+}
+
+// Handle all task action including get, update, and delete
+const taskAction = function (taskID, action, stage, updatedTask) {
+    stage.tasks.forEach((task) => {
+        if (task.id === taskID) {
+            if (action === 'get') return task;
+            else if (action === 'update') {
+                // for 
+            } else if (action === 'delete') boards.pop(task);
+        }
+    })
+};
+
+// Handle addition of task
+const addTask = function (stageID, newTask) {
+    const stage = stageAction(stageID, 'get');
+    stage.push(newTask);
 }
 
 const elmnt = `
